@@ -100,7 +100,6 @@
 static VKRenderingContext context = {
         .surface = NULL,
         .transform = {1.0, 0.0, 0.0,0.0, 1.0, 0.0},
-        .clipRect = {{0, 0},{INT_MAX, INT_MAX}},
         .color = {},
         .composite = ALPHA_COMPOSITE_SRC_OVER,
         .extraAlpha = 1.0f,
