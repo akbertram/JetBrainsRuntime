@@ -405,11 +405,12 @@ public class WLDataTransferer extends DataTransferer {
                 baseType = "text/plain";
             }
 
-            for (String encoding : DataFlavorUtil.standardEncodings()) {
-                if (!encoding.equals(charset)) {
-                    natives.add(baseType + ";charset=" + encoding);
-                }
-            }
+            // for (String encoding : DataFlavorUtil.standardEncodings()) {
+            //   if (!encoding.equals(charset)) {
+            //        natives.add(baseType + ";charset=" + encoding);
+            //    }
+            //}
+            natives.add(baseType + ";charset=UTF-8");
         }
 
         return natives;
